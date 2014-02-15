@@ -3,7 +3,19 @@ package proc.dyn;
 public class Single_lib2 {
 
 	/**
-	 * @param args
+	 *  Разработать класс-библиотеку для работы с односвязными списками. А именно 4 метода из DynamicArray:
+		public class SingleLLUtils_2 {
+
+    		public static Node add(Node tail, int elem) {...}
+
+    		public static Node remove(Node tail) {...}
+
+    		public static Node add(Node tail, int index, int elem) {...}
+
+    		public static Node remove(Node tail, int index) {...}
+
+}
+
 	 */
 	public static void main(String[] args) {
 		Node tail = null;
