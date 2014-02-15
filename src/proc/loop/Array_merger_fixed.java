@@ -1,18 +1,18 @@
 package proc.loop;
 import java.util.Arrays;
 
-/*Метод Merger.merge(...) реализован с небольшой ошибкой - он корректно сливает, но некорректно обрабатывает ситуацию, когда один из массивов полностью выбран. 
-1. Исправьте ошибку.
-2. После того как обнаружится, что один из массивов "исчерпан" копируйте данные со второго не в цикле, а одним вызовом System.arraycopy(...).*/
+/*РњРµС‚РѕРґ Merger.merge(...) СЂРµР°Р»РёР·РѕРІР°РЅ СЃ РЅРµР±РѕР»СЊС€РѕР№ РѕС€РёР±РєРѕР№ - РѕРЅ РєРѕСЂСЂРµРєС‚РЅРѕ СЃР»РёРІР°РµС‚, РЅРѕ РЅРµРєРѕСЂСЂРµРєС‚РЅРѕ РѕР±СЂР°Р±Р°С‚С‹РІР°РµС‚ СЃРёС‚СѓР°С†РёСЋ, РєРѕРіРґР° РѕРґРёРЅ РёР· РјР°СЃСЃРёРІРѕРІ РїРѕР»РЅРѕСЃС‚СЊСЋ РІС‹Р±СЂР°РЅ. 
+1. РСЃРїСЂР°РІСЊС‚Рµ РѕС€РёР±РєСѓ.
+2. РџРѕСЃР»Рµ С‚РѕРіРѕ РєР°Рє РѕР±РЅР°СЂСѓР¶РёС‚СЃСЏ, С‡С‚Рѕ РѕРґРёРЅ РёР· РјР°СЃСЃРёРІРѕРІ "РёСЃС‡РµСЂРїР°РЅ" РєРѕРїРёСЂСѓР№С‚Рµ РґР°РЅРЅС‹Рµ СЃРѕ РІС‚РѕСЂРѕРіРѕ РЅРµ РІ С†РёРєР»Рµ, Р° РѕРґРЅРёРј РІС‹Р·РѕРІРѕРј System.arraycopy(...).*/
 
 public class Array_merger_fixed {
 
-public static int[] merge(int[] a, int[] b) { // wron
+public static int[] merge(int[] a, int[] b) { 
 			int[] result = new int[a.length + b.length];
 	        int aIndex = 0;
 	        int bIndex = 0;
 	        while (bIndex < b.length && aIndex < a.length && aIndex + bIndex != result.length ) {
-	        	System.out.println("!!!");
+
 	            if (a[aIndex] < b[bIndex]) {
 	                result[aIndex + bIndex] = a[aIndex];
 	                aIndex++;
@@ -27,7 +27,7 @@ public static int[] merge(int[] a, int[] b) { // wron
 	            if (bIndex >= b.length){
 	            	System.out.println("b out");
 	            	System.arraycopy(a, aIndex, result, result.length - (a.length - aIndex), a.length - aIndex);
-	            }//(src, srcPos, dest, destPos, length)
+	            }
 	        }
 	        return result;
 	    }
