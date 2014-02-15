@@ -3,7 +3,17 @@ package proc.dyn;
 public class Single_lib {
 
 	/**
-	 * @param args
+	 *   Разработать класс-библиотеку для работы с односвязными списками. А именно 3 метода:
+
+			public class SingleLLUtils_1 {
+
+			public static int length(Node tail) {...}
+
+    			public static int max(Node tail) {...}
+
+    			public static int sum(Node tail) {...}
+
+}
 	 */
 	public static void main(String[] args) {
 	Node tail = null;
