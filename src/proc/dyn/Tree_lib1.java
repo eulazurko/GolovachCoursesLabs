@@ -3,16 +3,18 @@ package proc.dyn;
 public class Tree_lib1 {
 
 	/**
-	 *     Разработать класс-библиотеку для работы с бинарными деревьями. А именно 4 метода:
-public class BinaryTreeUtils {
+	 *     Р Р°Р·СЂР°Р±РѕС‚Р°С‚СЊ РєР»Р°СЃСЃ-Р±РёР±Р»РёРѕС‚РµРєСѓ РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ Р±РёРЅР°СЂРЅС‹РјРё РґРµСЂРµРІСЊСЏРјРё. Рђ РёРјРµРЅРЅРѕ 4 РјРµС‚РѕРґР°:
+		public class BinaryTreeUtils {
 
-    public static int size(TreeNode root) {...}
+		public static int size(TreeNode root) {...}
 
-    public static int height(TreeNode root) {...}
+		public static int height(TreeNode root) {...}
 
-    public static int sum(TreeNode root) {...}
+    		public static int sum(TreeNode root) {...}
 
-    public static int max(TreeNode root) {...}
+    		public static int max(TreeNode root) {...}
+
+}
 
 }
 	 */
